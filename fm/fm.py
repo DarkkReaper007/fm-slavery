@@ -19,7 +19,7 @@ def detect_stop_sign():
         stop_signs = stop_sign_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
         if len(stop_signs) > 0:
-            print("Detected stop signs at: ", stop_signs)
+            print("stop sign at: ", stop_signs)
 
 
         for (x, y, w, h) in stop_signs:
