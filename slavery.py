@@ -12,7 +12,7 @@ image_path = "" #path to the image
 while True:
     results = model.predict(source=image_path, imgsz=640, conf=0.25)
     for result in results:
-        if result.boxes:  # Check if there are any predictions
+        if result.boxes:  
             print(result.names)
             print("Confidences:", result.boxes.conf.tolist())  
         
